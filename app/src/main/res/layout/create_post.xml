@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#ffffff"
+    android:baselineAligned="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0d2b5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Create New Post"
+            android:id="@+id/textView16"
+            android:textSize="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText9"
+            android:layout_alignLeft="@+id/textView16"
+            android:layout_alignStart="@+id/textView16"
+            android:hint="Title"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:background="#FFFFE9D3"
+            android:textColor="#000000"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@+id/checkBox"
+            android:layout_below="@+id/textView16"
+            android:layout_alignEnd="@+id/checkBox"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ems="10"
+            android:id="@+id/editText10"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:hint="Content"
+            android:gravity="top|left"
+            android:lines="8"
+            android:textAlignment="inherit"
+            android:inputType="textMultiLine"
+            android:textColor="#000000"
+            android:background="#ffe9d3"
+            android:layout_below="@+id/editText9"
+            android:layout_alignStart="@+id/editText9"
+            android:layout_alignEnd="@+id/editText9" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Event"
+            android:id="@+id/checkBox"
+            android:textSize="18dp"
+            android:layout_below="@+id/editText10"
+            android:layout_toEndOf="@+id/textView16"
+            android:layout_marginLeft="20dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make anonymous"
+            android:id="@+id/checkBox2"
+            android:textSize="18dp"
+            android:checked="false"
+            android:layout_alignTop="@+id/checkBox"
+            android:layout_alignLeft="@+id/editText10"
+            android:layout_alignStart="@+id/editText10" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:id="@+id/button6"
+            android:layout_below="@+id/checkBox2"
+            android:layout_alignStart="@+id/checkBox2"
+            android:layout_alignEnd="@+id/checkBox"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
